@@ -25,6 +25,7 @@ body{
     background-color: #fff;
     color: #0b090a;
 }
+
 #header{
   width: 100%;
   height: 100vh;
@@ -53,6 +54,11 @@ li {
 }
 .nav-links a {
  color: #fff;
+}
+
+nav ul li a:hover {
+	color: #ef233c;
+	padding-top: 20px;
 }
 
 /*navbar menu*/
@@ -130,6 +136,7 @@ input[type=checkbox]:checked ~ .menu{
 .dropdown li:hover {
  background-color: #4c9e9e;
 }
+
 
 /*joseph resume*/
 #name{
