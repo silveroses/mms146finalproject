@@ -20,7 +20,38 @@ html{
 }
 
 body{
+    background-color: #000000;
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+}
+
+/*joseph resume*/
+#name{
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.text-white{
+  color: white;
+}
+
+.row {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+}
+.column {
+  color: white;
+  padding: 10px;
+  height: auto;
+}
+
+.left {
+  flex: 30%;
+}
+
+.right {
+  flex: 70%;
 }
