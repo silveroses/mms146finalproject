@@ -110,60 +110,38 @@ input[type=checkbox]{
 }
 /* media queries */
 @media (max-width: 768px) {
-.menu {
- display:none;
- position: absolute;
- background-color:#0b090a;
- right: 0;
- left: 0;
- text-align: center;
- padding: 16px 0;
+  .menu {
+   display:none;
+   position: absolute;
+   background-color:#0b090a;
+   right: 0;
+   left: 0;
+   text-align: center;
+   padding: 16px 0;
+  }
+  .menu li:hover {
+   display: inline-block;
+   background-color:#4c9e9e;
+   transition: 0.3s ease;
+  }
+  .menu li + li {
+   margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu{
+   display: block;
+  }
+  .hamburger {
+   display: block;
+  }
+  .dropdown li:hover {
+   background-color: #4c9e9e;
+  }
 }
-.menu li:hover {
- display: inline-block;
- background-color:#4c9e9e;
- transition: 0.3s ease;
-}
-.menu li + li {
- margin-top: 12px;
-}
-input[type=checkbox]:checked ~ .menu{
- display: block;
-}
-.hamburger {
- display: block;
-}
-.dropdown li:hover {
- background-color: #4c9e9e;
-}
-
 
 /*joseph resume*/
-#name{
-  text-align: center;
-  padding-top: 20px;
-
-}
-
-.text-white{
-  color: white;
-}
-
-.row {
-  max-width: 1000px;
-  margin: 20px auto;
-  display: flex;
-}
-.column {
-  color: white;
-  padding: 10px;
-  height: auto;
-}
-
-.left {
-  flex: 30%;
-}
-
-.right {
-  flex: 70%;
+.content {
+background-image: url("../images/bg1.png");
+background-repeat: no-repeat, repeat;
+background-color: #cccccc;
+min-height: 572px;
 }
