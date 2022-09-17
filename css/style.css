@@ -123,7 +123,7 @@ input[type=checkbox]{
   .menu li:hover {
    display: inline-block;
    background-color:#4c9e9e;
-   transition: 0.3s ease;
+   transition: 0.9s ease;
   }
   .menu li + li {
    margin-top: 12px;
@@ -137,6 +137,93 @@ input[type=checkbox]{
   .dropdown li:hover {
    background-color: #4c9e9e;
   }
+}
+
+/*homepage*/
+section
+{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index-content
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index-content .textbox
+{
+  position: relative;
+  max-width: 600px;
+}
+.index-content .textbox h2
+{
+  color: #333;
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.index-content .textbox h2 span
+{
+  color: #ef233c;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+.index-content .textbox p
+{
+  color: #333;
+}
+.index-content .textbox a
+{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #ef233c;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.index-content .imgBox
+{
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+/*thumbnail*/
+.thumb
+{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+.thumb li
+{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.thumb li:hover
+{
+  transform: translateY(-15px);
+}
+.thumb li img
+{
+  max-width: 150px;
 }
 
 /*joseph resume*/
@@ -172,8 +259,8 @@ align-items: center;
 .col {
   padding: 20px;
   display: flex;
-flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .col.left {

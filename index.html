@@ -47,9 +47,28 @@
     </ul>
   </nav>
 
-
   <!-- content section -->
+  <section>
+    <div class="index-content">
+      <div class="textbox">
+        <h2>Create memories<br>With <span>Chan & Tuason</span></h2>
+        <p>The upcoming digital agency created by two friends to document and design your events into a fairytale wonder.</p>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="imgBox">
+        <img src="images/img1.png" class="shop">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png')"></li>
+      <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png')"></li>
+    </ul>
+  </section>
 
-
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector('.shop').src = anything;
+    }
+  </script>
 </body>
 </html>
