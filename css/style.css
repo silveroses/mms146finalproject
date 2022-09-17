@@ -165,6 +165,10 @@ align-items: center;
   width:100%;
 }
 
+.about {
+  margin: 40px auto;
+}
+
 .col {
   padding: 20px;
   display: flex;
@@ -208,7 +212,7 @@ align-items: center;
   flex-direction: column;
   width:100%;
   max-width: 800px;
-  margin: 20px auto;
+  margin: 50px auto;
 
 }
 
@@ -252,4 +256,13 @@ align-items: center;
 .port {
   width: 100%;
   height: auto;
+}
+
+.content .flex-container .row .h1 {
+  font-size: 40px;
+}
+
+.content .par {
+  font-size: 21px;
+  font-weight: lighter;
 }
