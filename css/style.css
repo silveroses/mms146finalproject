@@ -231,3 +231,25 @@ align-items: center;
 .content .flex-container .row .col.right .h4 {
   font-weight: lighter;
 }
+
+/*joseph portfolio*/
+.bgpj {
+background-image: url("../images/bg2.png");
+background-repeat: no-repeat, repeat;
+background-size: cover;
+min-height: 230px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.bgpj .h1 {
+  align-self: center;
+  font-size: 35px;
+  color: white;
+}
+
+.port {
+  width: 100%;
+  height: auto;
+}
