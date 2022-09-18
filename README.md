@@ -7,3 +7,4 @@ homepage design: https://www.youtube.com/watch?v=91Q6RvKvd7o&list=LL&index=1&t=3
 
 live site: https://silveroses.github.io/mms146finalproject/
 navbar fix: https://stackoverflow.com/questions/50946397/dropdown-menu-disappears-too-quickly
+homepage javascript: https://www.youtube.com/watch?v=ydeQbbF9jbw

@@ -48,27 +48,61 @@
   </nav>
 
   <!-- Content -->
-  <section class="content">
+  <section class="bgtj">
     <div class="flex-container">
-      <div class="row">
-        <div class="col left">
           <h1 class="h1">About Us</h1>
         </div>
-      <div class="row about">
-        <div class="col left">
-          <h3 class="par">Hi! I’m Joseph, a Humanities and Social Sciences graduate and a media production and graphic design freelancer.</h3>
-          <br><br>
-          <h3>JOSEPH CHAN</h3>
-        </div>
-        <div class="col right">
-          <h3 class="par">Hi! My name is Raine Tuason and I have been working as a multimedia artist for over three years now! </h3>
-          <br><br>
-          <h3>RAINE TUASON</h3>
-        </div>
+  </section>
+  <section class="about" id="about">
+      <div class="max-width">
+          <div class="about-content">
+              <div class="column left">
+                <div class="imgBox">
+                  <img src="images/profile-1.jpg" id="images">
+                </div>
+              </div>
+              <div class="column right">
+                  <div class="text">Do You Need A <span class = "typewrite" data-loop = "yes" data-speed = "100" data-delay = "2000" data-words = '["Graphic Designer", "Multimedia Artist"]'></span></div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                  <a href="#">Check our Portfolios</a>
+              </div>
+          </div>
       </div>
-    </div>
   </section>
 
-
-
+  <!-- footer -->
+<footer id = "footer" class = "py-7">
+  <div class = "container">
+        <div class = "footer-content">
+            <div>
+                <ul class = "flex">
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About Us</a></li>
+                    <li><a href = "resume_index.html">Our Resumes</a></li>
+                    <li><a href = "portfolio_index.html">Our Portfolios</a></li>
+                    <li><a href = "contact.html">Contact Us</a></li>
+                    <li><a href = "blog_index.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of footer -->
+  <script type="text/javascript">
+    const img = document.getElementById('images')
+    //listen for the click evetn
+    //toggle variable
+    let toggle = true;
+    img.addEventListener('click', function(){
+      //toggle
+      toggle = !toggle;
+      if(toggle){
+        img.src = 'images\\profile-1.jpg';
+      }else {
+        img.src = 'images\\profile-2.jpg';
+      }
+    })
+  </script>
+  <!-- typewriting js -->
+  <script src = "typewriting-master/typewriting.js"></script>
 </body>

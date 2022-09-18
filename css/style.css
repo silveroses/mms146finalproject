@@ -13,6 +13,7 @@
     margin: 0;
 }
 
+
 html{
     font-size: 10px;
     scroll-behavior: smooth;
@@ -26,9 +27,40 @@ body{
     color: #0b090a;
 }
 
-#header{
-  width: 100%;
-  height: 100vh;
+.py-7{
+    padding: 7rem 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul {
+    list-style-type: none;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*scrollbar style*/
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #454248;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
 }
 
 /*logo*/
@@ -109,35 +141,6 @@ input[type=checkbox]{
  font-size: 24px;
  user-select: none;
 }
-/* media queries */
-@media (max-width: 768px) {
-  .menu {
-   display:none;
-   position: absolute;
-   background-color:#0b090a;
-   right: 0;
-   left: 0;
-   text-align: center;
-   padding: 16px 0;
-  }
-  .menu li:hover {
-   display: inline-block;
-   background-color:#4c9e9e;
-   transition: 0.9s ease;
-  }
-  .menu li + li {
-   margin-top: 12px;
-  }
-  input[type=checkbox]:checked ~ .menu{
-   display: block;
-  }
-  .hamburger {
-   display: block;
-  }
-  .dropdown li:hover {
-   background-color: #4c9e9e;
-  }
-}
 
 /*homepage*/
 section
@@ -161,7 +164,7 @@ section
 .index-content .textbox
 {
   position: relative;
-  max-width: 600px;
+  max-width: 900px;
 }
 .index-content .textbox h2
 {
@@ -176,6 +179,7 @@ section
   font-size: 1.2em;
   font-weight: 900;
 }
+/*contact button*/
 .index-content .textbox p
 {
   color: #333;
@@ -194,36 +198,85 @@ section
 }
 .index-content .imgBox
 {
-  width: 600px;
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
-  margin-top: 50px;
 }
-/*thumbnail*/
-.thumb
-{
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
+
+
+/*about*/
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+section .about{
+  padding: 100px 0;
+}
+
+.bgtj {
+background-image: url("../images/title-bg.png");
+background-repeat: no-repeat, repeat;
+background-size: cover;
+min-height: 230px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.bgtj .h1 {
+  align-self: center;
+  font-size: 35px;
+  color: white;
+}
+
+.about .about-content,
+.skills .skills-content{
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
-.thumb li
-{
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-  cursor: pointer;
-  transition: 0.5s;
+
+.about .about-content .left{
+    width: 45%;
 }
-.thumb li:hover
-{
-  transform: translateY(-15px);
+.about .about-content .left img{
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 6px;
 }
-.thumb li img
-{
-  max-width: 150px;
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
 }
 
 /*joseph resume*/
@@ -252,9 +305,6 @@ align-items: center;
   width:100%;
 }
 
-.about {
-  margin: 40px auto;
-}
 
 .col {
   padding: 20px;
@@ -352,4 +402,155 @@ align-items: center;
 .content .par {
   font-size: 21px;
   font-weight: lighter;
+}
+
+/*raine resume*/
+.bgtj .flex-container .image {
+  height: 250px;
+  width: 250px;
+}
+
+.bgtj .flex-container .h1 {
+  font-size: 50px;
+  color:white;
+}
+
+.bgtj .ewflex-container .h1 {
+  align-content: space-between;
+  font-size: 50px;
+  color:white;
+}
+
+.bgtj .flex-container .h2 {
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+}
+.social-links{
+    display: flex;
+    margin-top: 3.5rem;
+}
+.social-links li a{
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-color);
+    margin-right: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+.social-links li a:hover{
+    opacity: 0.9;
+}
+
+/* footer */
+#footer{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.footer-content{
+    text-align: center;
+}
+.footer-content h3{
+    color: var(--light-color);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+.footer-content ul{
+    flex-direction: row;
+}
+.footer-content ul li a{
+    color: var(--light-color);
+    font-size: 2.0rem;
+    transition: var(--transition);
+}
+.footer-content ul li a:hover{
+    opacity: 0.7;
+}
+.footer-content ul li{
+    margin: .5rem 1rem;
+}
+.footer-content > div:first-child{
+    margin-bottom: 3rem;
+}
+.footer-content > div:first-child div{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 5rem auto;
+    border-radius: 50%;
+}
+
+/*resume and portfolio index*/
+#services{
+  padding: 30px 0;
+}
+.services-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+/* navbar media queries */
+@media (max-width: 768px) {
+  .menu {
+   display:none;
+   position: absolute;
+   background-color:#0b090a;
+   right: 0;
+   left: 0;
+   text-align: center;
+   padding: 16px 0;
+  }
+  .menu li:hover {
+   display: inline-block;
+   background-color:#4c9e9e;
+   transition: 0.9s ease;
+  }
+  .menu li + li {
+   margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu{
+   display: block;
+  }
+  .hamburger {
+   display: block;
+  }
+  .dropdown li:hover {
+   background-color: #4c9e9e;
+  }
+}
+
+/*responsive media queries*/
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+  }
+
+@media (max-width: 991px) {
+
+  .max-width{
+      max-width: 930px;
+  }
+  .about .about-content .column{
+      width: 100%;
+  }
+  .about .about-content .left{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 60px;
+  }
+  .about .about-content .right{
+      flex: 100%;
+  }
+@media (max-width: 500px) {
+  .about .about-content .right .text{
+    font-size: 19px;
+  }
+@media(min-width: 576px){
+  .footer-content ul{
+      flex-direction: row;
+  }
 }
