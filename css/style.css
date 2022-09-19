@@ -226,7 +226,7 @@ align-items: center;
 }
 
 .bgtj .h1 {
-  align-self: center;
+  align-self: auto;
   font-size: 35px;
   color: white;
 }
