@@ -554,3 +554,43 @@ align-items: center;
       flex-direction: row;
   }
 }
+}
+}
+
+/*contact page*/
+.contact {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  padding: initial;
+  min-height: auto;
+  padding: 35px;
+}
+
+.box {
+  background-color: black;
+  height: 280px;
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.box .row .left {
+  width: 10%;
+  margin-top: 6px;
+}
+
+.box .row .right {
+  width: 90%;
+  color: white;
+  align-items: baseline;
+  margin-top: 15px;
+}
+
+.contact-text {
+  font-weight: lighter;
+  font-size: 17px;
+}
