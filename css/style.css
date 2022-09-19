@@ -92,6 +92,7 @@ li {
 nav ul li a:hover {
 	color: #ef233c;
 	padding-top: 20px;
+
 }
 
 /*navbar menu*/
@@ -99,9 +100,11 @@ nav ul li a:hover {
  display: flex;
  gap: 1em;
  font-size: 18px;
+ position: relative; /* <-- added declaration */
 }
 .menu li {
  padding: 5px 14px;
+
 }
 
 /*dropdown menu*/
@@ -120,6 +123,7 @@ nav ul li a:hover {
 }
 .dropdown li + li {
  margin-top: 10px;
+
 }
 .dropdown li {
  padding: 0.5em 1em;
@@ -127,7 +131,7 @@ nav ul li a:hover {
  text-align: center;
 }
 .dropdown-menu:hover .dropdown {
- display: block;
+  display: block;
 }
 
 /*responsive navbar*/
@@ -490,6 +494,37 @@ align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
+}
+.services-list div{
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.services-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list div a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.services-list div:hover{
+  background: #ff004f;
+  transform: translateY(-10px);
+
 }
 /* navbar media queries */
 @media (max-width: 768px) {
