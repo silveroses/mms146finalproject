@@ -27,6 +27,7 @@ body{
     color: #0b090a;
 }
 
+/*reusable codes*/
 .py-7{
     padding: 7rem 0;
 }
@@ -47,6 +48,83 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.about .about-content,
+.contact .contact-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.index-content
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index-content .textbox
+{
+  position: relative;
+  max-width: 900px;
+}
+.index-content .textbox h2
+{
+  color: #333;
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.index-content .textbox h2 span
+{
+  color: #ef233c;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+.index-content p{
+  text-align: justify;
+}
+/*resume and portfolio index*/
+#index{
+  padding: 170px 0;
+}
+.index-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.index-list div{
+  background: #262626;
+  padding: 80px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.index-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.index-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.index-list div a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.index-list div:hover{
+  background: #ef233c;
+  transform: translateY(-10px);
+
 }
 /*scrollbar style*/
 *::-webkit-scrollbar {
@@ -157,32 +235,7 @@ input[type=checkbox]{
   justify-content: space-between;
   align-items: center;
 }
-.index-content
-{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.index-content .textbox
-{
-  position: relative;
-  max-width: 900px;
-}
-.index-content .textbox h2
-{
-  color: #333;
-  font-size: 4em;
-  line-height: 1.4em;
-  font-weight: 500;
-}
-.index-content .textbox h2 span
-{
-  color: #ef233c;
-  font-size: 1.2em;
-  font-weight: 900;
-}
+
 /*contact button*/
 .index-content .textbox p
 {
@@ -235,14 +288,6 @@ align-items: center;
   color: white;
 }
 
-.about .about-content,
-.contact .contact-content{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .about .about-content .left{
     width: 45%;
 }
@@ -275,11 +320,11 @@ align-items: center;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #ef233c;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: #ef233c;
     background: none;
 }
 
@@ -458,48 +503,6 @@ align-items: center;
     opacity: 0.9;
 }
 
-/*resume and portfolio index*/
-#services{
-  padding: 170px 0;
-}
-.services-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-.services-list div{
-  background: #262626;
-  padding: 80px;
-  font-size: 13px;
-  font-weight: 300;
-  color: #fff;
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
-}
-.services-list div i{
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-.services-list div h2{
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.services-list div a{
-  text-decoration: none;
-  color: inherit;
-  font-size: 15px;
-  margin-top: 20px;
-  display: inline-block;
-}
-.services-list div:hover{
-  background: #ef233c;
-  transform: translateY(-10px);
-
-}
-
 /* contact section styling */
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -578,7 +581,7 @@ align-items: center;
 .right form .button-area button{
   color: #fff;
   display: block;
-  width: 160px!important;
+  width: 160px;
   height: 45px;
   outline: none;
   font-size: 18px;
